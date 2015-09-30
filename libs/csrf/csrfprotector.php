@@ -242,7 +242,8 @@ if (!defined('__CSRF_PROTECTOR__')) {
 				throw new logDirectoryNotFoundException("OWASP CSRFProtector: Log Directory Not Found!");
 		
 			//call the logging function
-			static::logCSRFattack();
+			//For Reference we will log another way.
+			//static::logCSRFattack();
 
 			//#todo: ask mentors if $failedAuthAction is better as an int or string
 			//default case is case 0
